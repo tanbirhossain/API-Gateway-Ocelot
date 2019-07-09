@@ -29,7 +29,9 @@
         }
       ],
       "LoadBalancerOptions": {
-        "Type": "RoundRobin"
+        "Type": "CookieStickySessions",
+        "Key": "ASP.NET_SessionId",
+        "Expiry": 1800000
       }
     },
     {
